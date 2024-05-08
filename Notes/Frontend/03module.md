@@ -58,7 +58,7 @@ import { B } from 'moduleB';
 
 ### 사용되는 이유
 - 모든 브라우저가 ES6+의 기능을 제공하지 않기 때문에 ES5 코드로 변환시키는 과정이 필요
-- React의 JSX 또는 TypeScript 코드를 자바스크립트 코드로 변환
+- React의 JSX 또는 TypeScript 코드를 자바스크립트 코드로 변환 (JSX란 JS에서 XML을 추가한 확장형 문법으로 직관적으로 UI 작업이 가능케함)
 - Bable(Polyfill 역할도 하며 브라우저가 지원하지 않는 코드를 지원 가능하도록 수정하거나 새로 구현, 구현이 누락된 부분의 기능을 메꿔주는 역할) TypeScript Transpiler 
 
 https://velog.io/@ssulv3030/%EB%AA%A8%EB%93%88-%EB%B2%88%EB%93%A4%EB%9F%AC%EB%9E%80webpack-pacel-rollup-%EB%B9%84%EA%B5%90
