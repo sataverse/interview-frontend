@@ -1,17 +1,15 @@
 # frontend
 - SPA
-- CSR vs SSR
-- BOM & DOM
-- yarn & npm
-- js & jsx
+- NPM
+- Module
+- Rendering
 - stopPropgation vs 
-- 모듈 번들러
-- 브라우저의 렌더링 원리
 - restful api
 - CORS
 - UI 요소
 
 # react
+- 가상 DOM Tree
 - 라이프 사이클
 - hooks
 - react-router-dom
@@ -35,10 +33,12 @@
 - strict mode
 - hoisting
 - 비동기
+- 인터프리터 vs 컴파일러
 
 # typescript
 
 # 데이터통신
+- HTTP vs HTTPS
 - 주소창에 웹사이트 이름을 입력하면 일어나는 일과 과정
 
 # Git
