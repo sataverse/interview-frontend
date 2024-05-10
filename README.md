@@ -1,16 +1,23 @@
 # frontend
+- UI 요소
 - SPA
 - NPM
 - Module
 - Rendering
-- stopPropgation vs 
-- restful api
+- RESTful API
+- React
+- Hooks
+- Library
+- HTML
+- CSS
+- JavaScript
+- ES6
+- Network
 - CORS
-- UI 요소
+- Git
+- Other
 
 # react
-- 가상 DOM Tree
-- 라이프 사이클
 - hooks
 - react-router-dom
 - styled
@@ -25,6 +32,7 @@
 
 # javascript
 - js의 특징
+- stopPropagation vs preventDefault
 - require vs import
 - const vs let vs var
 - null vs undefined, undeclared, NaN
