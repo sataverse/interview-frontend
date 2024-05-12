@@ -88,9 +88,10 @@ useMemo를 변형해 더 편하게 사용 할 수 있는 Hook
     - useEffect(()⇒{}, [value]), useEffect(()⇒{})
     - 값이 변경될 경우나, 리렌더링이 발생하는 경우 실행 (부모 컴포넌트가 리 렌더링, props 변화, state의 변경)
 ### 언마운트
+-componentWillUnmount()
     - useEffect(()⇒{ return () => {}}, [value])
     - 컴포넌트가 DOM에서 제거되기 직전에 호출
--componentWillUnmount()
+
 
 
 https://velog.io/@velopert/react-hooks

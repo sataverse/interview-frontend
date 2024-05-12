@@ -6,7 +6,7 @@
 - Rendering
 - RESTful API
 - React
-- Hooks
+- Hook
 - Library
 - HTML
 - CSS
@@ -16,15 +16,6 @@
 - CORS
 - Git
 - Other
-
-# react
-- hooks
-- react-router-dom
-- styled
-- zustand
-
-# html
-- local storage vs session storage vs cookie
 
 # css
 - margin & padding & border
@@ -48,5 +39,9 @@
 # 데이터통신
 - HTTP vs HTTPS
 - 주소창에 웹사이트 이름을 입력하면 일어나는 일과 과정
+- 웹페이지는 무엇인가
 
 # Git
+
+
+- key가 필요한 이유
