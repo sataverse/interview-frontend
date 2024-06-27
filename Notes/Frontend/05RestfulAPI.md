@@ -22,6 +22,8 @@ aaa.co.kr은 리소스의 이름만 나타내기 때문에 URI (Host + Path)
 Uniform Resource Locator은 네트워크상에서 리소스의 위치를 나타내기 위한 규약
 자원 식별자 + 위치, URL은 URI의 일종
 https://aaa.co.kr은 위치(프로토콜)까지 나타내기 때문에 URL (Scheme + Host + Path)
+### URN
+리소스를 유일하고 영구적인 이름으로 식별
 
 ## API
 Application Programming Interface의 약자로 응용프로그램에서 사용할 수 있도록 운영 체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있게 만든 인터페이스
@@ -36,9 +38,9 @@ REST 원칙을 적용하여 서비스 API를 설계한 것
 - 파일확장자 포함x
 - 행위 포함x, HTTP Method로 표현
 - 요청에 대한 응답의 상태코드를 명확하게 돌려주어야 함
-    - 2xx: 성공 (201 Ok, 201 Created)
+    - 2xx: 성공 (200 Ok, 201 Created)
     - 3xx: 리다이렉션 (304 Not Modified)
-    - 4xx: 클라이언트 에러
+    - 4xx: 클라이언트 에러 (401 권한없음, 403 금지, 404 not found)
     - 5xx: 서버 에러
 
 ## RESTful

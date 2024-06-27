@@ -40,6 +40,16 @@ CSSOM과 DOM 트리의 결합으로 만들어짐. 웹 페이지에 나타낼 각
 Layout 단계는 렌더트리를 이용해 뷰포트 내에서 노드의 정확한 위치와 크기를 계산.
 Paint 단계는 계산된 위치와 크기를 바탕으로 실제 픽셀로 변환하여 전달.
 
+### Reflow
+- DOM엘리먼트 추가, 제거, 변경
+- CSS스타일 추가, 제거, 변경
+- CSS3 애니메이션과 트랜지션 모든프레임에서 발생
+- 유저 인터랙션 hover, input text, window resize
+
+### Repaint
+- 가시성이 변경 (opacity, background-color, visibility, outline)
+- reflow 실행 후
+
 https://velog.io/@imok-_/JavaScript-DOM-BOM-%EC%9D%B4%EB%9E%80
 https://github.com/baeharam/Must-Know-About-Frontend/blob/main/Notes/frontend/browser-rendering.md
 https://github.com/baeharam/Must-Know-About-Frontend/blob/main/Notes/frontend/bom-dom.md

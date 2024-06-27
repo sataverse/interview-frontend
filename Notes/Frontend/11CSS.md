@@ -39,9 +39,47 @@ display:none 스타일을 가진 태그는 공간이 할당되지도 않고 보�
 |넓이|기본 넓이가 부모 넓이|.|.|
 |크기 조절|가능|불가|가능
 |마진/패딩 조절|가능|상하 마진/패딩 불가|가능|
+
 flex, grid, table
 
 ## flex
+- 부모 요소(flex container) 자식요소(flex item) 컨테이너가 flex의 영향을 받는 전체 공간이고 설정된 속성에 딸라 각각의 아이템들이 어떤 형태로 배치 되는 것.
+### 컨테이너에 적용
+- display: flex
+- flex-direction: 메인축의 방향 설정
+- flex-wrap: 줄바꿈 처리
+- jusfify-content: 메인축 방향 정렬
+- align-items: 수직축 방향 정렬 stretch가 기본값, flex-end하면 아래로 붙기
+- align-content: wrap한 상태에서 2줄 이상 되었을 때, 여러 행 정렬
+### 아이템에 적용
+- flex-basis: flex 아이템의 기본 크기
+- flex-grow: 유연하게 늘리기, basis의 값보다 커질 수 있는지 결정. basis를 제외한 여백 부분을 지정된 숫자의 비율로 나누어 가짐.
+- flex-shrink: 유연하게 줄이기, basis의 값보다 작아질 수 있는지 결정. 0으로 세팅하면 줄어들지 않음.
+- align-self: 수직축 정렬
+- order: 시각적 나열 순서, html자체의 구조를 바꾸는 것은 아님
+
+## grid
+- flex가 한 방향 레이아웃 시스템이었다면 grid는 두 방향 레이아웃 시스템
+- grid container, grid item
+### 컨테이너에 적용
+- display: gird
+- grid-template-rows/columns 그리드 행/열 크기를 지정. 
+    - 크기를 나열함 1fr 1fr 1fr은 비율 대로 트랙의 크기를 나눠 1:1:1로 3개의 트랙을 만들겠다는 의미. 
+    - repeat(5, 1fr 2fr 1fr) 함수를 사용하여 반복 가능. 
+    - minmax(n, m)으로 최소 최대 길이 지정.
+    - repeat(auto-fill, minmax(20%, auto)) row에는 5개 셀이 들어가는데 셀의 개수가 모자르면 공간이 남고 auto-fit을 사용하면 공간을 채워 늘림.
+- row/column-gap / gap : 그리드 셀 사이의 간격
+- grid-row/column: 시작/끝 셀 영역을 지정 2 / span 3으로 몇 개의 셀을 차지할 지 정하는것도 가능.
+- grid template-areas: 각 영역에 이름을 붙이고 그 이름을 이용해서 배치
+    - grid-area: name으로 이름 지정
+- grid-auto-flow: 아이템이 자동 배치되는 흐름을 결정. dense로 빈 셀에 넣을 수 있음.
+- align-items: 세로 축 방향 정렬
+- justify-items: 가로 축 방향 정렬
+- align-content: grid 아이템 모두 정렬
+- justify-content: gird 아이템 모두 정렬
+### 아이템에 적용
+- *-self
+- order
 
 ## 미디어 쿼리
 - 미디어 유형과 미디어 특성으로 구성되는 참 또는 거짓의 값을 가지는 논리식
@@ -112,7 +150,17 @@ flex, grid, table
         transform: translateX(-50px);
     }
 ```
-### css vs js
+### css 애니메이션 vs js 애니메이션
+- css
+    - transition, animation 속성
+    - 간단한 애니메이션 처리
+    - 외부 라이브러리를 필요로 하지 않음
+    - 메인스레드가 아닌 별도의 컴포지터 스레드에서 그려지기 때문에 효율적
+- js
+    - setInterval() / requestAnimationFrame() 사용
+    - css로 처리하기에는 복잡한 애니메이션, 세밀한 구성
+    - 외부 라이브러리로 성능 좋은 애니메이션 구현 가능
+    - 브라우저 호환성 측면에서 transition/animation 보다 뛰어남
 
 ## Others
 ### calc
@@ -148,3 +196,5 @@ flex, grid, table
     }
 ```
 
+https://studiomeal.com/archives/197
+https://studiomeal.com/archives/533
